@@ -5,7 +5,10 @@
 	あ YANG BELUM PAHAM CAR RUN DI HEROKU TONTON AJA VIDEO SEBELUMNYA
 	あ FITUR JUALAN TELAH DI HAPUS [ Bisa order sama saya klo mau ]
 	
-	あ JASA RUN HEROKU BISA PC wa.me/62887435047326 BIAR BOT NYA GAK TERLALU DELAY
+	あsc by: Zeeone ofc
+	あ DEFFBOTz :Repost
+	
+	あ JASA RUN HEROKU BISA PC wa.me/6282132805286 BIAR BOT NYA GAK TERLALU DELAY
 	
 */   
 const
@@ -2242,7 +2245,8 @@ reply(`Pembeliaan game limit sebanyak ${q} berhasil
 break
 	case 'me': case 'myinfo': case 'info': case 'profile': case 'profil':{
 let cek = ms( await premium.getPremiumExpired(sender, premium) - Date.now())
-let userProcfile = `「 *USER INFO* 」
+let userProcfile = `${ucapannya2}
+「 *USER INFO* 」
 
 📛 Nama : ${pushname}
 💋 Bio : ${bio_user}
@@ -2312,27 +2316,29 @@ const media = await alpha.prepareMessage(from, content, MessageType.image, { thu
 let bacotlu = media.message["ephemeralMessage"] ? media.message.ephemeralMessage : media
 let p1 = await alpha.getStatus(sender)
 anunya = process.uptime()
-ini_anu =`${ucapannya2}
+ini_anu =`${ucapannya2} 👋
 
 ╭─❒ 「 Bot Info 」 
-├ Creator :  @${koko.split('@')[0]}
-├ Powered  : @${ini_mark.split('@')[0]}
-├ Prefix :   ${prefix}
-├ Total hit : ${require('util').inspect(hitall(sender))}
-├ Hit today : ${hit_today.length}
-├ Speed : ${latensii.toFixed(4)} Second
-├ Hostname : ${os.hostname()}
-├ Platform : ${os.platform()}
-├ Runtime : ${(kyun(os.uptime()))}
-├ Battery : ${isBattre}
-╰❒ Charging : ${isCharge}
+├ 🤴Creator :  @${koko.split('@')[0]}
+├ 📱Powered  : @${ini_mark.split('@')[0]}
+├ ⁉️Prefix :   ${prefix}
+├ ✳️Total hit : ${require('util').inspect(hitall(sender))}
+├ ❇️Hit today : ${hit_today.length}
+├ 🏃Speed : ${latensii.toFixed(4)} Second
+├ 🤵Hostname : ${os.hostname()}
+├ ♨️Platform : ${os.platform()}
+├ ⏰Runtime : ${(kyun(os.uptime()))}
+├ 📱Battery : ${isBattre}
+├ ⛔Charging : ${isCharge}
+╰❒
 
 ╭─❒ 「 User Info 」 
-├ Name : ${pushname}
-├ Bio : ${p1 ? `${p1.status}` : '-'}
-├ Nomor : @${sender.split('@')[0]}
-├ Me : ${mek.key.fromMe ? 'True' : 'False'}
-╰❒ Owner : ${isOwner ? 'True' : `False`}
+├ 📛Name : ${pushname}
+├ 💌Bio : ${p1 ? `${p1.status}` : '-'}
+├ #️⃣Nomor : @${sender.split('@')[0]}
+├ 🧑Me : ${mek.key.fromMe ? 'True' : 'False'}
+├ 🤴Owner : ${isOwner ? 'True' : `False`}
+╰❒
 `
 if(typemenu == 'document'){
 sendButDoc(from, ini_anu, `Please Don't spam bot, pause 3 seconds per command!\n`, sender, koko, ini_mark)
@@ -2724,7 +2730,7 @@ case 'bcgif':
 					const vname = alpha.contacts[i] != undefined ? alpha.contacts[i].vname || alpha.contacts[i].notify : undefined
 					ini_list.push({
 					"displayName": 'Owner Alphabot',
-					"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${alpha.user.name}`}\nORG: SUBSCRIBE ZEEONE OFC;\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
+					"vcard": `BEGIN:VCARD\nVERSION:3.0\nN:Sy;Bot;;;\nFN:${vname ? `${vname}` : `${alpha.user.name}`}\nORG: DEFFBOTz;\nitem1.TEL;waid=${i.split('@')[0]}:${i.split('@')[0]}\nitem1.X-ABLabel:Ponsel\nEND:VCARD`
 					})
 					}
 					hehe = await alpha.sendMessage(from, {
@@ -2848,7 +2854,6 @@ await limitAdd(sender, limit)
 					break   
 		    case 'totag':
 		            if (!isGroupAdmins) return reply(lang.onlygcAdmin())
-					if (!isOwner && !isCreator) return reply(lang.onlyOwner())
 		            if ((isMedia && !mek.message.videoMessage || isQuotedSticker) && args.length == 0) {
 		            encmedia = isQuotedSticker ? JSON.parse(JSON.stringify(mek).replace('quotedM', 'm')).message.extendedTextMessage.contextInfo : mek
 		            file = await alpha.downloadAndSaveMediaMessage(encmedia, filename = getRandom())
@@ -3038,7 +3043,7 @@ await limitAdd(sender, limit)
 		            imageToBase64(pjr)
 		            .then((response) => {
 		            media =  Buffer.from(response, 'base64');
-		            alpha.sendMessage(from,media,image,{quoted:mek,caption:'Dasar wibu. Nih!!!\nJgn lupa sub YT : ZEEONE OFC'})
+		            alpha.sendMessage(from,media,image,{quoted:mek,caption:'Dasar wibu. Nih!!!\nJgn lupa sub YT : DEFFBOTz'})
 		            }
 		            )
 		            .catch((error) => {
@@ -3070,7 +3075,7 @@ await limitAdd(sender, limit)
 				    var media_ = await alpha.downloadAndSaveMediaMessage(encmedia_)
 		            anu = args.join(' ').split('|')
 		            satu = anu[0] !== '' ? anu[0] : `SUBSCRIBE`
-		            dua = typeof anu[1] !== 'undefined' ? anu[1] : `ZEEONE OFC`
+		            dua = typeof anu[1] !== 'undefined' ? anu[1] : `DEFFBOTz`
 		            require('./lib/fetcher.js').createExif(satu, dua)
 					require('./lib/fetcher.js').modStick(media_ , alpha, mek, from)
 					await limitAdd(sender, limit)
@@ -3078,7 +3083,6 @@ await limitAdd(sender, limit)
 			case 'stikerwm':
 			case 'stickerwm':
 		    case 'swm':
-		if (!isPremium) return sendButMessage(from, `Mohon maaf fitur ini khusus untuk user premium saja! Upgrade akun mu sekarang dengan cara ketik ${prefix}goprem`, `Click button below`, [{buttonId: 'goprem',buttonText: {displayText: `Upgrade Premium`,},type: 1,}],{quoted:mek});
 		            pe = args.join('')
 		            var a = pe.split("|")[0];
 		            var b = pe.split("|")[1];
@@ -3230,7 +3234,7 @@ reply(lang.success())
 break
 		 	case 'hidetag':
 		     case '_`':
-		if (!mek.key.fromMe && !isGroupAdmins && !isOwner && !isCreator) return reply(lang.onlyOwner())
+		if (!mek.key.fromMe && !isGroupAdmins) return reply(lang.onlyOwner())
 		     if (!isGroup) return fakegroup(lang.onlygc())
 					var value = args.join(' ')
 					var group = await alpha.groupMetadata(from)
@@ -3457,7 +3461,7 @@ break
 					fs.unlinkSync(mediaa)
 					if (err) return reply('Yah gagal, coba ulangi ^_^')
 					buffer = fs.readFileSync(ran)
-					fakethumb(buffer,'```Nih kak, jgn lupa Support YT : ZEEONE OFC```')
+					fakethumb(buffer,'```Nih kak, jgn lupa Support YT : DEFFBOTz```')
 					fs.unlinkSync(ran)
 					})
 					await limitAdd(sender, limit)
@@ -4065,7 +4069,6 @@ if (!isGroup) return reply(lang.onlygc())
 			if (!isGroup) return reply(lang.onlygc())
 					if (!isGroupAdmins) return reply(lang.onlygcAdmin())
 					if (!isBotGroupAdmins) return reply(lang.botNotAdm())       
-			if (!mek.key.fromMe && !isOwner && !isCreator) return reply(lang.onlyOwner())
 			        if (!isGroup) return reply(lang.onlygc())
 					if (!isGroupAdmins) return reply(lang.onlygcAdmin())
 					if (!isBotGroupAdmins) return reply(lang.botNotAdm())       
@@ -6059,7 +6062,7 @@ await alpha.sendMessage(from, gambar_gopay_nya, image, {thumbnail: Buffer.alloc(
 if (budy.includes("eror",'error','Eror','Error')){
 					alpha.updatePresence(from, Presence.composing)
 					const daieeeee = fs.readFileSync('./sticker/10_1.webp');
-					alpha.sendMessage(from, daieeeee, sticker, { contextInfo: {mentionedJid: [sender]}, quoted: { "key": { "participant": `${numbernye}@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumbnail}`), "mimetype": "application/octet-stream","title": "YT : ZEEONE OFC", "fileLength": "36", "pageCount": 0, "fileName": `Kenapa bisa error???`}}, "messageTimestamp": "1614069378", "status": "PENDING"}})
+					alpha.sendMessage(from, daieeeee, sticker, { contextInfo: {mentionedJid: [sender]}, quoted: { "key": { "participant": `${numbernye}@s.whatsapp.net`, "remoteJid":  '6283136505591-1614953337@g.us', "fromMe": false, "id": "B391837A58338BA8186C47E51FFDFD4A" }, "message": { "documentMessage": { "jpegThumbnail": fs.readFileSync(`image/${thumbnail}`), "mimetype": "application/octet-stream","title": "YT : DEFFBOTz", "fileLength": "36", "pageCount": 0, "fileName": `Kenapa bisa error???`}}, "messageTimestamp": "1614069378", "status": "PENDING"}})
 		        }
 		if(budy.includes("@verif", "@verify","daftar")){
 			if (isRegister) return reply('Kamu sudah terdaftar di dalam database')
